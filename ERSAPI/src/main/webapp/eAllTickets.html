@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reimbursement System</title>
+    <link rel="stylesheet" href="./CSS/ERS_Stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#allTickets tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+    <style>  
+      [data-title]:hover:after { 
+          visibility: visible; 
+      } 
+        
+      [data-title]:after { 
+          content: attr(data-title); 
+          background-color:navy;     
+          color: white; 
+          font-size: 70%; 
+          position: absolute; 
+          padding: 4px 8px 4px 8px; 
+          visibility: hidden; 
+      } 
+    </style>  
+</head>
+
+<body background="./IMG/background.jpg">
+    <h3 id="myHead">List of My Expense Tickets</h3>
+
+    <div class="container mt-3">
+        <!--<input class="form-control" id="myInput" type="text" placeholder="Search..."><br>-->
+        <table class="table table">
+          <thead>
+            <tr>
+              <th>Ticket ID</th>
+              <th>Type</th>
+              <th>Status</th>
+              <th>Amount</th>
+              <th>Submit Date</th>
+              <th>Result Date</th>
+              <th>Approver Comments</th>
+            </tr>
+          </thead>
+          <tbody id="allTickets">
+
+          </tbody>
+        </table>
+        
+      </div>
+
+      <script src="./AJAX/eAllTickets.js"></script>
+</body>
+
+</html>

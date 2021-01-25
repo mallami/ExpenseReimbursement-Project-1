@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reimbursement System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body background="./IMG/login.jpg">
+
+    <center><br><img src="./IMG/expense.jpg" height=250 width=500></center>
+    
+    <form action="http://localhost:8080/ERSAPI/api/login" method="POST">
+        <div class="form-row">
+            
+            <img src="./IMG/login.jpg" height=1 width=530>
+
+            <div class="col-auto my-3">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" name="username" placeholder="Email" required>
+            </div>
+
+            <div class="col-auto my-3">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="col-auto my-5">
+                <button id="login" type="submit" class="btn btn-primary mb-2">Login</button>
+            </div>
+        </div>
+        
+    </form>
+
+    <marquee style="font-size: 46pt; color: white;" direction="right" behavior="alternate">Expense Reimbursement System</marquee>
+
+</body>
+
+</html>

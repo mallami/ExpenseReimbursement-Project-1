@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reimbursement System</title>
+    <link rel="stylesheet" href="../CSS/ERS_Stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <table style="border: 2px lightgray solid; white-space: nowrap">
+        <col width=16%>
+        <col width=84%>
+    
+        <tr>
+            <td style="overflow-y: scroll; vertical-align: text-top; background-color: lightblue">
+                <details open="true" id="empSection">
+                    <summary>Employees</summary>
+                    <p><a href="http://localhost:8080/ERSAPI/mAllEmployees.html" style="color: black" target="displayarea">All Employees</a></p>
+                    <p><a href="http://localhost:8080/ERSAPI/mEmployeePage.html" style="color: black" target="displayarea">New Employee</a></p>
+                </details>
+
+                <details open="true">
+                    <summary>Expense Tickets</summary>
+                    <p id="expTickets"><a href="http://localhost:8080/ERSAPI/mAllTickets.html" style="color: black" target="displayarea">All Employee Tickets</a></p>
+                    <p><a href="http://localhost:8080/ERSAPI/eAllTickets.html" style="color: black" target="displayarea">My Expense Tickets</a></p>
+                    <p><a href="http://localhost:8080/ERSAPI/eTicketPage.html" style="color: black" target="displayarea">New Expense Ticket</a></p>
+                </details>
+
+                <details open="true">
+                    <summary id="user" name="user" style="background-color: rgb(168, 41, 41)">User</summary>
+                    <!--<p><a href="http://localhost:8080/ERSAPI/ChangePassword.html" style="color: black" target="displayarea">Change Password</a></p>-->
+                    <p><a href="http://localhost:8080/ERSAPI/api/logout" class="post-request" style="color: rgb(219, 32, 32)" target="_self">Logout</a></p>
+                </details>
+            </td>
+
+            <td style="overflow-y: scroll; background-image: url(../IMG/background.jpg)">
+                    <iframe name="displayarea" height=714px width=1290px frameborder=0></iframe>                 
+            </td>
+        </tr>
+
+        <tr>
+            <td id="footer" colspan=2 style="height: 25px; border-top: 0px lightgray solid; text-align: center; background-color: navy">Expense Reimbursement System, 2021</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

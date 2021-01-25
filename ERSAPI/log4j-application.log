@@ -1,0 +1,43 @@
+2021-01-11 13:46:10 INFO  EmployeeController:55 - John Adams : Logged in
+2021-01-11 13:46:12 INFO  EmployeeController:71 - John Adams : Logged out
+2021-01-11 13:54:33 INFO  EmployeeController:55 - John Adams : Logged in
+2021-01-11 13:54:54 INFO  EmployeeController:146 - John Adams : Viewed All Employees
+2021-01-11 13:55:01 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 13:55:47 INFO  EmployeeController:101 - John Adams : Added new employee - Philip Fuller
+2021-01-11 13:55:49 INFO  EmployeeController:146 - John Adams : Viewed All Employees
+2021-01-11 13:56:18 INFO  EmployeeController:55 - Philip Fuller : Logged in
+2021-01-11 13:56:33 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 13:57:00 INFO  TicketController:56 - Philip Fuller : Created New Expense Ticket
+2021-01-11 13:57:18 INFO  TicketController:56 - Philip Fuller : Created New Expense Ticket
+2021-01-11 13:57:20 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 13:57:33 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 13:58:11 INFO  TicketController:199 - John Adams : Approved Expense Ticket# 2414
+2021-01-11 13:58:13 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 13:58:23 INFO  TicketController:129 - John Adams : Viewed All Submitted Expense Tickets
+2021-01-11 13:58:58 INFO  TicketController:199 - John Adams : Approved Expense Ticket# 2415
+2021-01-11 13:59:00 INFO  TicketController:129 - John Adams : Viewed All Submitted Expense Tickets
+2021-01-11 13:59:07 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 13:59:09 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 13:59:10 INFO  EmployeeController:71 - Philip Fuller : Logged out
+2021-01-11 13:59:21 INFO  EmployeeController:55 - Philip Fuller : Logged in
+2021-01-11 13:59:24 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 13:59:47 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 13:59:54 INFO  TicketController:129 - John Adams : Viewed All Approved Expense Tickets
+2021-01-11 13:59:59 INFO  TicketController:129 - John Adams : Viewed All Rejected Expense Tickets
+2021-01-11 14:00:03 INFO  TicketController:129 - John Adams : Viewed All Submitted Expense Tickets
+2021-01-11 14:00:13 INFO  TicketController:80 - John Adams : Viewed My Expense Tickets
+2021-01-11 14:03:36 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 14:05:14 INFO  EmployeeController:71 - Philip Fuller : Logged out
+2021-01-11 14:05:49 INFO  EmployeeController:71 - null : Logged out
+2021-01-11 14:05:55 INFO  EmployeeController:55 - Philip Fuller : Logged in
+2021-01-11 14:05:59 INFO  TicketController:80 - Philip Fuller : Viewed My Expense Tickets
+2021-01-11 14:06:02 INFO  EmployeeController:71 - Philip Fuller : Logged out
+2021-01-11 14:06:07 INFO  EmployeeController:55 - John Adams : Logged in
+2021-01-11 14:06:09 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 14:08:09 INFO  EmployeeController:71 - John Adams : Logged out
+2021-01-11 14:08:23 INFO  EmployeeController:55 - John Adams : Logged in
+2021-01-11 14:08:27 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 14:08:49 INFO  TicketController:199 - John Adams : Approved Expense Ticket# 2415
+2021-01-11 14:08:50 INFO  TicketController:104 - John Adams : Viewed All Expense Tickets
+2021-01-11 14:09:12 INFO  EmployeeController:71 - John Adams : Logged out
+2021-01-11 14:39:02 INFO  EmployeeController:71 - null : Logged out

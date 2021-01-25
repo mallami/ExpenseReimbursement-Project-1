@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reimbursement System</title>
+    <link rel="stylesheet" href="./CSS/ERS_Stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+<body background="./IMG/background.jpg">
+
+    <div class="container mt-3">
+        <h3 id="myHead">Expense Ticket Information</h3> <br>
+
+        <form id="myForm">
+            <div class="form-row">
+
+                <div class="form-group col-md-2">
+                    <label for="inputExpdate">Expense Date</label> <span style="color:red">*</span>
+                    <input type="date" class="form-control" id="expenseDate" name="expenseDate" placeholder="Expense Date" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-3">
+                  <label for="inputExpType">Expense Type</label> <span style="color:red">*</span>
+                  <select id="expenseType" name="expenseType" class="form-control" required>
+                      <option class="optionExpType" value="" selected disabled>Select Expense Type</option>
+                      <option class="optionExpType" value="1">Lodging</option>
+                      <option class="optionExpType" value="2">Travel</option>
+                      <option class="optionExpType" value="3">Food</option>
+                      <option class="optionExpType" value="4">Other</option>
+                  </select>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="inputExpDescription">Expense Description</label> <span style="color:red">*</span>
+                <input type="text" class="form-control" id="expenseDescription" name="expenseDescription" placeholder="Expense Description" required>
+              </div>
+
+            </div>
+
+          <div class="form-row">
+
+              <div class="form-group col-md-2">
+                <label for="inputAmount">Expense Amount</label> <span style="color:red">*</span>
+                <input type="number" class="form-control" id="expenseAmount" name="expenseAmount" placeholder="Amount" data-type="currency" min=1 step=0.01 required>
+              </div>
+
+              <!--<div class="form-group col-md-4">
+                <label for="inputAttachment">Attachment</label>
+                <input type="file" class="form-control" id="attachment" name="attachment" placeholder="Attachment">
+              </div>-->
+
+          </div>
+
+
+          <div class="form-group">
+
+              <div class="col-md-10">
+                  <button type="submit" id="save" class="btn btn-primary" data-dismiss="alert" aria-label="Close">Submit Ticket</button>
+                  <!--<button type="reset" id="reset" class="btn btn-primary" data-dismiss="alert" aria-label="Close">Reset</button>-->
+              </div>
+              <br><span style="color:red">*</span> <span>Required fields</span>
+
+              <div id="msg" class="alert alert-success fade">
+                <strong>Success!</strong> New expense ticket saved successfully.
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+              </div>
+
+          </div>
+
+    </form>
+
+    <script src="./AJAX/eTicketPage.js"></script>
+</body>
+
+</html>

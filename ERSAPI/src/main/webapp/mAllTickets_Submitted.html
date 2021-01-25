@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Reimbursement System</title>
+    <link rel="stylesheet" href="./CSS/ERS_Stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#allTickets tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+    <script>
+        function testJS() {
+            var b = document.getElementById('name').value,
+                url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+            document.location.href = url;
+        }
+    </script>
+</head>
+
+<body background="./IMG/background.jpg">
+    <h3 id="myHead">List of Employees Expense Tickets</h3>
+    <input type="text" id="statusName" name="statusName" hidden>
+    
+      <div class="container mt-3">
+        <div class="dropdown">
+         <!--<input class="form-control" id="myInput" type="text" placeholder="Search...">-->
+         <div class="form-row">
+          <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="resultComment" name="resultComment" placeholder="Approver Comments" maxlength="50">
+          </div>
+          <div class="form-group col-md-6">
+              <button type="submit" class="btn btn-success" id="approve">Approve</button>
+              <button type="submit" class="btn btn-warning" id="reject">Reject</button>
+              <button type="submit" class="btn btn-danger" id="delete">Delete</button>
+          </div>
+       </div>
+      <table id="myTable" class="table table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" id="mcheck"></th>
+              <th>Ticket ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Type</th>
+              <th>    
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Status
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="./mAllTickets.html">All</a>
+                    <a class="dropdown-item" href="./mAllTickets_Submitted.html">Submitted</a>
+                    <a class="dropdown-item" href="./mAllTickets_Approved.html">Approved</a>
+                    <a class="dropdown-item" href="./mAllTickets_Rejected.html">Rejected</a>
+                  </div>
+                </div>
+              </th>
+              <th>Amount</th>
+              <th>Submit Date</th>
+            </tr>
+          </thead>
+          <tbody id="allTickets">
+              
+          </tbody>
+        </table>
+        
+      </div>
+
+      <script src="./AJAX/mAllTickets_Submitted.js"></script>
+
+</body>
+
+</html>

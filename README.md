@@ -23,7 +23,11 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 * Add employee update information page.
                     
 # Getting Started
-* Create new folder and clone 
+* Create new folder and clone the project (git clone https://github.com/mallami/ExpenseReimbursement-Project-1.git)
+* Import this project to the working area in Spring Suite or Eclipse IDE
+* Add this project to Tomcat server
+* From your web browser use the link: http://localhost:8080/ERSAPI/Login.html
+
 
 # Usage
 

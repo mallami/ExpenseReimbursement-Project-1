@@ -3,8 +3,8 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 
 # Technologies Used
 
-Java
-Maven
+Java*
+Maven*
 Servlet
 JDBC
 Tomcat
@@ -18,8 +18,9 @@ JavaScript
 BootStrap
 
 # Features
-**Future Development:** 1- Add upload invoice to the expense ticket page.
-                    2- Add employee update information page.
+**Future Development:** 
+1- Add upload invoice to the expense ticket page.
+2- Add employee update information page.
                     
 # Getting Started
 

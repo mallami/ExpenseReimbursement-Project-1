@@ -31,6 +31,7 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 
 # Usage
 * To enter as a Finance Manager you can use mail1@company.com as a username and 1111 as a password to get access to the following menu
+
 ![image](https://user-images.githubusercontent.com/71060267/105922668-b3ef4100-6000-11eb-8ba4-f08d505342db.png)
 
 * Manager can view All Employees
